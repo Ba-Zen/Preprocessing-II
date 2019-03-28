@@ -1,4 +1,32 @@
 .home {
+    margin: 0 auto;
+  .welcome {
+
+    h2 {
+      padding: 20px 0;
+    }
+
+    p {
+      border-bottom: 2px dashed gray;
+      padding-bottom: 20px;
+    }
+
+    @media @mobile {
+      img {
+        margin: 0 20px;
+        width: 90%;
+      }
+      
+      h2 {
+        margin: 0 20px;
+       
+      }
+  
+      p {
+        margin: 0 20px;
+      }
+    }
+  }
 
   .content-section {
     margin: 30px 0;
@@ -21,29 +49,67 @@
         border-radius: 10px;
       }
     }
+    
+    @media @mobile{
+      .text-content {
+        width: 100%;
+        margin: 0 20px;
+      }
+
+      .img-content {
+        width: 100%;
+        margin: 0 20px;
+      }
+
+    }
+
   }
 
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
-
+    
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+      @media @mobile{
+        // margin: 0 0 0 20px;
+        width: 98%;
+      }
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @mobile {
+        width: 100%;
+      }
     }
-  }
+    @media @mobile{
+      display: flex;
+      flex-direction: column-reverse;
+      flex-wrap: wrap;
+      width: 90%;
+      // margin: 0 0 0 20px;
+    }
+
+    }
+  
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
-
+    @media @mobile {
+      margin: 0 0 0 20px;
+      padding-bottom: 20px;
+    }
     img {
       border-radius: 10px;
+    }
+
+    @media @mobile{
+      width: 90%;
     }
   }
 
@@ -57,5 +123,31 @@
       width: 30%;
       margin-bottom: 30px;
     }
+    @media @mobile {
+      
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // width: 90%;
+
+        .destination {
+          // flex-wrap: wrap;
+          width: 80%;
+          padding: 0 15px;
+        }
+
+        .btn {
+          width: 100%;
+          background-color: skyblue;
+        }
+
+        .btn2 {
+          width: 100%;
+          background-color: skyblue;
+        }
+      }
+    }
+
   }
-}// home
+// home
